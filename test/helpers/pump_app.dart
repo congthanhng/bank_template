@@ -1,4 +1,4 @@
-import 'package:bank_template/l10n/l10n.dart';
+import 'package:bank_internationalization/l10n/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 

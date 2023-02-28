@@ -11,16 +11,21 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_bloc: ^8.1.2
-  flutter_localizations:
-    sdk: flutter
-  intl: ^0.17.0
+  velocity_x: ^3.6.0
+
+  ##Local Dependencies
+  bank_ui_kit:
+    path: ./packages/bank_ui_kit
+  bank_internationalization:
+    path: ./packages/bank_internationalization
 
 dev_dependencies:
   bloc_test: ^9.1.1
   flutter_test:
     sdk: flutter
   mocktail: ^0.3.0
-  very_good_analysis: ^4.0.0
+  very_good_analysis: ^4.0.0+1
+  flutter_svg: ^2.0.2
 
 flutter:
   uses-material-design: true
