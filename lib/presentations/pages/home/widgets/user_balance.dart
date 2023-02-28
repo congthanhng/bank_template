@@ -24,7 +24,7 @@ class UserBalance extends StatelessWidget {
               style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
-                  fontSize: 25),
+                  fontSize: 25,),
             ),
             const Spacer(),
             DecoratedBox(
@@ -32,13 +32,11 @@ class UserBalance extends StatelessWidget {
                 color: AppColors.grayBase1,
                 borderRadius: BorderRadius.circular(AppPadding.pad32),
               ),
-              child: IconButton(
-                icon: const Icon(
-                  Icons.search,
-                  color: Colors.white,
-                ),
-                onPressed: () {},
-              ),
+              child: const Icon(
+                Icons.search,
+                color: Colors.white,
+                size: AppSize.size21,
+              ).p(AppPadding.pad10),
             )
           ],
         )

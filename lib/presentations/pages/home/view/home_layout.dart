@@ -1,3 +1,4 @@
+import 'package:bank_template/presentations/pages/home/widgets/credit_card_carousel.dart';
 import 'package:bank_template/presentations/pages/home/widgets/home_app_bar.dart';
 import 'package:bank_template/presentations/pages/home/widgets/user_balance.dart';
 import 'package:bank_ui_kit/shelf.dart';
@@ -33,10 +34,13 @@ class _HomeLayoutState extends State<HomeLayout> {
         ),
         child: SafeArea(
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const HomeAppBar(),
               const SizedBox(height: AppSize.size32,),
               const UserBalance(),
+              const SizedBox(height: AppSize.size28,),
+              CreditCardCarousel(),
               const Spacer(),
               BottomNavigationBar(
                 showSelectedLabels: false,

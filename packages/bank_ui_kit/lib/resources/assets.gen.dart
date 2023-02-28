@@ -54,8 +54,12 @@ class $AssetsImagesGen {
   SvgGenImage get userAvatar =>
       const SvgGenImage('assets/images/user_avatar.svg');
 
+  /// File path: assets/images/visa_logo.png
+  AssetGenImage get visaLogo =>
+      const AssetGenImage('assets/images/visa_logo.png');
+
   /// List of all assets
-  List<dynamic> get values => [logo, userAvatar];
+  List<dynamic> get values => [logo, userAvatar, visaLogo];
 }
 
 class Assets {
@@ -155,27 +159,27 @@ class SvgGenImage {
     @deprecated Clip? clipBehavior,
     @deprecated bool cacheColorFilter = false,
   }) {
-      return SvgPicture.asset(
-        _assetName,
-        key: key,
-        matchTextDirection: matchTextDirection,
-        bundle: bundle,
-        package: package,
-        width: width,
-        height: height,
-        fit: fit,
-        alignment: alignment,
-        allowDrawingOutsideViewBox: allowDrawingOutsideViewBox,
-        placeholderBuilder: placeholderBuilder,
-        semanticsLabel: semanticsLabel,
-        excludeFromSemantics: excludeFromSemantics,
-        theme: theme,
-        colorFilter: colorFilter,
-        color: color,
-        colorBlendMode: colorBlendMode,
-        clipBehavior: clipBehavior,
-        cacheColorFilter: cacheColorFilter,
-      );
+    return SvgPicture.asset(
+      _assetName,
+      key: key,
+      matchTextDirection: matchTextDirection,
+      bundle: bundle,
+      package: package,
+      width: width,
+      height: height,
+      fit: fit,
+      alignment: alignment,
+      allowDrawingOutsideViewBox: allowDrawingOutsideViewBox,
+      placeholderBuilder: placeholderBuilder,
+      semanticsLabel: semanticsLabel,
+      excludeFromSemantics: excludeFromSemantics,
+      theme: theme,
+      colorFilter: colorFilter,
+      color: color,
+      colorBlendMode: colorBlendMode,
+      clipBehavior: clipBehavior,
+      cacheColorFilter: cacheColorFilter,
+    );
   }
 
   String get path => _assetName;
