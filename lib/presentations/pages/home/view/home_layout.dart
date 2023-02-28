@@ -1,4 +1,5 @@
 import 'package:bank_template/presentations/pages/home/widgets/home_app_bar.dart';
+import 'package:bank_template/presentations/pages/home/widgets/user_balance.dart';
 import 'package:bank_ui_kit/shelf.dart';
 import 'package:flutter/material.dart';
 import 'package:velocity_x/velocity_x.dart';
@@ -16,7 +17,6 @@ class _HomeLayoutState extends State<HomeLayout> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.grayBase3, // set again in future
       body: DecoratedBox(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
@@ -36,13 +36,13 @@ class _HomeLayoutState extends State<HomeLayout> {
             children: [
               const HomeAppBar(),
               const SizedBox(height: AppSize.size32,),
-
+              const UserBalance(),
               const Spacer(),
               BottomNavigationBar(
                 showSelectedLabels: false,
                 showUnselectedLabels: false,
                 unselectedItemColor: Colors.white,
-                backgroundColor: AppColors.primaryBg,
+                backgroundColor: Colors.black,
                 selectedItemColor: AppColors.accentYellow,
                 type: BottomNavigationBarType.fixed,
                 items: AppBottomBarItem.generate([
