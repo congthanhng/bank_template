@@ -22,4 +22,6 @@ class AppColors {
 
   static const gradientAvatarStart = Color(0xFFEDFC74);
   static const gradientAvatarEnd = Color(0xFFF5FFA8);
+
+  static const homeBGGradient = Color (0xFF433D48);
 }

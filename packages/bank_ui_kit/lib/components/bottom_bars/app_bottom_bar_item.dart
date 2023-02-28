@@ -12,7 +12,7 @@ class AppBottomBarItem {
               icon: ImageIcon(AssetImage(
                   'packages/bank_ui_kit/${pathIcon[index]}')),
               label: NavBarLabel.values[index].name,
-              backgroundColor: AppColors.primaryBg,
+              backgroundColor: Colors.black,
             ),
       );
 }
