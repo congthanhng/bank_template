@@ -2,6 +2,19 @@
 
 ## Getting Started 🚀
 
+### Configuration
+
+First of all, you need to config the project. Make sure that your flutter SDK is newest and supporting Dart SDK >= 2.19.0.
+To find out what version of your SDK, run this script in cmd: `flutter doctor -v`
+
+Run this script at project directory:
+```shell
+bash -x config-script.sh
+```
+Or you can use any IDLE with supporting run shell file to run `config-script.sh`
+Another way, you can run line-by-line in this file.
+
+### Start Build
 This project contains 3 flavors:
 
 - development
