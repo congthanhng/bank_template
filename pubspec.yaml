@@ -30,7 +30,16 @@ dev_dependencies:
   mocktail: ^0.3.0
   very_good_analysis: ^4.0.0+1
   flutter_svg: ^2.0.2
+  flutter_launcher_icons: ^0.12.0
 
 flutter:
   uses-material-design: true
   generate: true
+
+flutter_icons:
+  image_path_android: 'packages/bank_ui_kit/assets/images/logo.png'
+  android: true
+  min_sdk_android: 29
+  image_path_ios: 'packages/bank_ui_kit/assets/images/logo.png'
+  ios: true
+  remove_alpha_ios: true

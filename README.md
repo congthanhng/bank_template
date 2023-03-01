@@ -7,7 +7,7 @@
 First of all, you need to config the project. Make sure that your flutter SDK is newest and supporting Dart SDK >= 2.19.0.
 To find out what version of your SDK, run this script in cmd: `flutter doctor -v`
 
-Run this script at project directory:
+Run this script at project directory to generated config or metadata needed in your CLI:
 ```shell
 bash -x config-script.sh
 ```
