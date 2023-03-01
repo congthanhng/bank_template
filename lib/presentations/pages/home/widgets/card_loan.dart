@@ -9,24 +9,34 @@ class CardLoan extends StatelessWidget {
   Widget build(BuildContext context) {
     return DecoratedBox(
       decoration: BoxDecoration(
-          color: AppColors.grayBase2,
-          borderRadius: BorderRadius.circular(AppRadius.rad26),),
+        color: AppColors.grayBase2,
+        borderRadius: BorderRadius.circular(AppRadius.rad26),
+      ),
       child: Row(
         children: [
-          AppBadge(iconImage: Assets.icons.creditcardFace.imageWidget()),
-          const SizedBox(width: AppPadding.pad12,),
+          AppBadge(
+            iconImage: Assets.icons.creditcardFace.imageWidget(),
+            background: AppColors.accentMint,
+          ),
+          const SizedBox(
+            width: AppPadding.pad12,
+          ),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
                 'Account № 3874825',
                 style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                    fontSize: AppFontSize.fontSize15, color: Colors.white,),
+                      fontSize: AppFontSize.fontSize15,
+                      color: Colors.white,
+                    ),
               ),
               Text(
                 'Expires 12/22/2023',
                 style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                    fontSize: AppFontSize.fontSize12, color: Colors.grey,),
+                      fontSize: AppFontSize.fontSize12,
+                      color: Colors.grey,
+                    ),
               ),
             ],
           ).expand(),
@@ -35,12 +45,16 @@ class CardLoan extends StatelessWidget {
               Text(
                 r'$ 78,92',
                 style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                    fontSize: AppFontSize.fontSize15, color: Colors.white,),
+                      fontSize: AppFontSize.fontSize15,
+                      color: Colors.white,
+                    ),
               ),
               Text(
                 'Rate 3.5%',
                 style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                    fontSize: AppFontSize.fontSize12, color: Colors.grey,),
+                      fontSize: AppFontSize.fontSize12,
+                      color: Colors.grey,
+                    ),
               ),
             ],
           ),

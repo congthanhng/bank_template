@@ -17,6 +17,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/chart.png
   AssetGenImage get chart => const AssetGenImage('assets/icons/chart.png');
 
+  /// File path: assets/icons/close.png
+  AssetGenImage get close => const AssetGenImage('assets/icons/close.png');
+
   /// File path: assets/icons/creditcard_face.png
   AssetGenImage get creditcardFace =>
       const AssetGenImage('assets/icons/creditcard_face.png');
@@ -44,12 +47,16 @@ class $AssetsIconsGen {
   /// File path: assets/icons/star.png
   AssetGenImage get star => const AssetGenImage('assets/icons/star.png');
 
+  /// File path: assets/icons/thunder.png
+  AssetGenImage get thunder => const AssetGenImage('assets/icons/thunder.png');
+
   /// File path: assets/icons/wallet.png
   AssetGenImage get wallet => const AssetGenImage('assets/icons/wallet.png');
 
   /// List of all assets
   List<AssetGenImage> get values => [
         chart,
+        close,
         creditcardFace,
         iconBag2pxLine,
         iconCard2pxLine,
@@ -57,6 +64,7 @@ class $AssetsIconsGen {
         iconHome2pxLine,
         iconTime2pxLine,
         star,
+        thunder,
         wallet
       ];
 }

@@ -1,3 +1,4 @@
+import 'package:bank_template/presentations/pages/home/widgets/card_advertisement.dart';
 import 'package:bank_template/presentations/pages/home/widgets/card_loan.dart';
 import 'package:bank_ui_kit/components/expansions/app_expansion.dart';
 import 'package:bank_ui_kit/shelf.dart';
@@ -32,6 +33,8 @@ class ActionSheet extends StatelessWidget {
             isTrailing: true,
             children: [
               CardLoan(),
+              SizedBox(height: AppPadding.pad16,),
+              CardAdvertisement(),
               Text('afaffa'),
               Text('afaffa'),
               Text('afaffa'),

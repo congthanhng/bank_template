@@ -1,7 +1,7 @@
 import 'dart:ui';
 
 class AppColors {
-  static const primaryBg = Color(0xFF1E1F1F);
+  static const  primaryBg = Color(0xFF1E1F1F);
 
   static const accentYellow = Color(0xFFF2FE8D);
   static const accentMint = Color(0xFFB2D0CE);
@@ -26,7 +26,10 @@ class AppColors {
   static const homeBGGradient = Color (0xFF433D48);
 
   static const text = Color (0xFF272A32);
+  static const textAdvertise = Color (0xFF262626);
   static const smallCardBg = Color (0xFF252626);
-
   static const actionPlus = Color (0xFFE5E5E5);
+
+  static const badgeAdvertiseBg = Color (0xFF242727);
+
 }
