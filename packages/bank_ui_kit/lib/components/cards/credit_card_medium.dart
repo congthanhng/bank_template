@@ -2,21 +2,34 @@ import 'package:bank_ui_kit/shelf.dart';
 import 'package:flutter/material.dart';
 
 class CreditCardMedium extends StatelessWidget {
-  const CreditCardMedium({Key? key}) : super(key: key);
+  const CreditCardMedium(
+      {Key? key,
+      required this.startColor,
+      required this.endColor,
+      required this.name,
+      required this.amount,
+      required this.numberCard})
+      : super(key: key);
+
+  final Color startColor;
+  final Color endColor;
+  final String name;
+  final String amount;
+  final String numberCard;
 
   @override
   Widget build(BuildContext context) {
     return Container(
       width: MediaQuery.of(context).size.width / 2.5,
       decoration: BoxDecoration(
-          gradient: const LinearGradient(
+          gradient: LinearGradient(
               colors: [
-                AppColors.gradient2Start,
-                AppColors.gradient2End,
+                startColor,
+                endColor,
               ],
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
-              stops: [0.25, 1]),
+              stops: const [0.25, 1]),
           borderRadius: BorderRadius.circular(AppRadius.rad30)),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -32,7 +45,7 @@ class CreditCardMedium extends StatelessWidget {
             padding: const EdgeInsets.only(
                 left: AppPadding.pad16, top: AppPadding.pad32),
             child: Text(
-              'Salary',
+              name,
               style: Theme.of(context).textTheme.bodySmall?.copyWith(
                   color: AppColors.text, fontSize: AppFontSize.fontSize11),
             ),
@@ -41,7 +54,7 @@ class CreditCardMedium extends StatelessWidget {
             padding: const EdgeInsets.only(
                 left: AppPadding.pad16, top: AppPadding.pad2),
             child: Text(
-              r'$ 7,896',
+              amount,
               style: Theme.of(context).textTheme.bodySmall?.copyWith(
                   color: AppColors.text,
                   fontWeight: FontWeight.bold,
@@ -55,7 +68,7 @@ class CreditCardMedium extends StatelessWidget {
                 top: AppPadding.pad26,
                 bottom: AppPadding.pad24),
             child: Text(
-              r'** 6971',
+              numberCard,
               style: Theme.of(context).textTheme.bodySmall?.copyWith(
                   color: AppColors.text, fontSize: AppFontSize.fontSize12),
             ),

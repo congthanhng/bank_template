@@ -13,7 +13,8 @@ dependencies:
   flutter_bloc: ^8.1.2
   velocity_x: ^3.6.0
   expansion_tile_group: ^1.2.1
-
+  get_it: ^7.2.0
+  intl: ^0.17.0
   ##Local Dependencies
   bank_ui_kit:
     path: ./packages/bank_ui_kit
