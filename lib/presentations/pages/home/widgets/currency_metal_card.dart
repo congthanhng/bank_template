@@ -25,17 +25,17 @@ class CurrencyMetalCard extends StatelessWidget {
               Text(
                 isMetal ? 'Metals' : 'Currencie',
                 style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                    color: Colors.grey, fontSize: AppFontSize.fontSize12),
+                    color: Colors.grey, fontSize: AppFontSize.fontSize12,),
               ).pOnly(bottom: AppPadding.pad12),
               Text(
                 'Buy',
                 style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                    color: Colors.grey, fontSize: AppFontSize.fontSize12),
+                    color: Colors.grey, fontSize: AppFontSize.fontSize12,),
               ).pOnly(right: AppPadding.pad32).objectBottomRight(),
               Text(
                 'Sell',
                 style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                    color: Colors.grey, fontSize: AppFontSize.fontSize12),
+                    color: Colors.grey, fontSize: AppFontSize.fontSize12,),
               ).objectBottomRight(),
             ],
           ),
@@ -55,21 +55,21 @@ class CurrencyMetalCard extends StatelessWidget {
                     width: AppPadding.pad12,
                   ),
                   Text(
-                    'USD',
+                    isMetal ? 'Gold' : 'USD',
                     style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                        color: Colors.white, fontSize: AppFontSize.fontSize15),
+                        color: Colors.white, fontSize: AppFontSize.fontSize15,),
                   )
                 ],
               ),
               Text(
                 r'$ 78,92',
                 style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                    color: Colors.white, fontSize: AppFontSize.fontSize15),
+                    color: Colors.white, fontSize: AppFontSize.fontSize15,),
               ).pOnly(right: AppPadding.pad32),
               Text(
                 r'$ 78,92',
                 style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                    color: Colors.white, fontSize: AppFontSize.fontSize15),
+                    color: Colors.white, fontSize: AppFontSize.fontSize15,),
               ),
             ],
           ),
@@ -91,10 +91,10 @@ class CurrencyMetalCard extends StatelessWidget {
                       width: AppPadding.pad12,
                     ),
                     Text(
-                      'EUR',
+                      isMetal ? 'Silver' : 'EUR',
                       style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                           color: Colors.white,
-                          fontSize: AppFontSize.fontSize15),
+                          fontSize: AppFontSize.fontSize15,),
                     )
                   ],
                 ),
@@ -102,12 +102,12 @@ class CurrencyMetalCard extends StatelessWidget {
               Text(
                 r'$ 78,92',
                 style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                    color: Colors.white, fontSize: AppFontSize.fontSize15),
+                    color: Colors.white, fontSize: AppFontSize.fontSize15,),
               ),
               Text(
                 r'$ 78,92',
                 style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                    color: Colors.white, fontSize: AppFontSize.fontSize15),
+                    color: Colors.white, fontSize: AppFontSize.fontSize15,),
               ),
             ],
           ),
