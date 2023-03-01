@@ -1,3 +1,5 @@
+import 'package:bank_template/domain/models/finance.dart';
+import 'package:bank_template/presentations/utils/color_ext.dart';
 import 'package:bank_ui_kit/shelf.dart';
 import 'package:flutter/material.dart';
 import 'package:velocity_x/velocity_x.dart';
@@ -5,7 +7,7 @@ import 'package:velocity_x/velocity_x.dart';
 class FinanceCarousel extends StatelessWidget {
   FinanceCarousel({super.key});
 
-  final List<String> mockFinance = ['a', 'b', 'c', 'd'];
+  final List<FinanceModel> mockFinance = FinanceModel.mockData();
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +32,11 @@ class FinanceCarousel extends StatelessWidget {
               width: AppPadding.pad13,
             ),
             itemCount: mockFinance.length,
-            itemBuilder: (context, index) => const SmallCard(),
+            itemBuilder: (context, index) => SmallCard(
+              name: mockFinance[index].name??'',
+              bgColor: (mockFinance[index].bgColor??'').fromHex(),
+              imageIcon: Image.asset('packages/bank_ui_kit/${mockFinance[index].pathIcon}'),
+            ),
             physics: const BouncingScrollPhysics(),
             scrollDirection: Axis.horizontal,
           ),

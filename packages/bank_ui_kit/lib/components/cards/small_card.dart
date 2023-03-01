@@ -2,7 +2,16 @@ import 'package:bank_ui_kit/shelf.dart';
 import 'package:flutter/material.dart';
 
 class SmallCard extends StatelessWidget {
-  const SmallCard({Key? key}) : super(key: key);
+  const SmallCard(
+      {Key? key,
+      required this.imageIcon,
+      required this.bgColor,
+      required this.name})
+      : super(key: key);
+
+  final Image imageIcon;
+  final Color bgColor;
+  final String name;
 
   @override
   Widget build(BuildContext context) {
@@ -16,13 +25,18 @@ class SmallCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(
-            padding: const EdgeInsets.all(AppPadding.pad16),
-            child: AppBadge(iconImage: Assets.icons.star.imageWidget(),)
-          ),
+              padding: const EdgeInsets.all(AppPadding.pad16),
+              child: AppBadge(
+                iconImage: imageIcon,
+                background: bgColor,
+              )),
           const Spacer(),
           Padding(
-            padding: const EdgeInsets.only(left: AppPadding.pad16, bottom: AppPadding.pad14, right: AppPadding.pad16),
-            child: Text('Finance analysis',
+            padding: const EdgeInsets.only(
+                left: AppPadding.pad16,
+                bottom: AppPadding.pad14,
+                right: AppPadding.pad16),
+            child: Text(name,
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis,
                 style: Theme.of(context).textTheme.bodySmall?.copyWith(
