@@ -1,3 +1,4 @@
+import 'package:bank_internationalization/l10n/l10n.dart';
 import 'package:bank_template/presentations/pages/home/widgets/card_advertisement.dart';
 import 'package:bank_template/presentations/pages/home/widgets/card_loan.dart';
 import 'package:bank_template/presentations/pages/home/widgets/currency_metal_card.dart';
@@ -26,11 +27,11 @@ class ActionSheet extends StatelessWidget {
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: const [
+        children: [
           AppExpansion(
-            title: 'Current Loans',
+            title: context.l10n.current_loans,
             isTrailing: true,
-            children: [
+            children: const [
               CardLoan(),
               SizedBox(
                 height: AppPadding.pad16,
@@ -39,8 +40,8 @@ class ActionSheet extends StatelessWidget {
             ],
           ),
           AppExpansion(
-            title: 'Currencies and metals',
-            children: [
+            title: context.l10n.currencies_and_metals,
+            children: const [
               CurrencyMetalCard(),
               SizedBox(
                 height: AppPadding.pad12,
@@ -48,7 +49,7 @@ class ActionSheet extends StatelessWidget {
               CurrencyMetalCard(isMetal: true),
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: AppPadding.pad12,
           ),
         ],

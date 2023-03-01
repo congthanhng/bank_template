@@ -1,3 +1,4 @@
+import 'package:bank_internationalization/l10n/l10n.dart';
 import 'package:bank_ui_kit/shelf.dart';
 import 'package:flutter/material.dart';
 import 'package:velocity_x/velocity_x.dart';
@@ -11,7 +12,7 @@ class UserBalance extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          'Your balance',
+          context.l10n.your_balance,
           style: Theme.of(context)
               .textTheme
               .titleMedium

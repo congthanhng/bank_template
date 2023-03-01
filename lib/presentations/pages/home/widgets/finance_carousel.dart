@@ -1,3 +1,4 @@
+import 'package:bank_internationalization/l10n/l10n.dart';
 import 'package:bank_template/domain/models/finance.dart';
 import 'package:bank_template/presentations/utils/color_ext.dart';
 import 'package:bank_ui_kit/shelf.dart';
@@ -16,7 +17,7 @@ class FinanceCarousel extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       children: [
         Text(
-          'Finance'.toUpperCase(),
+          context.l10n.finance.toUpperCase(),
           style: Theme.of(context).textTheme.bodySmall?.copyWith(
                 color: Colors.white,
                 fontSize: AppFontSize.fontSize10,

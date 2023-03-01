@@ -14,8 +14,8 @@ class MyApp extends StatelessWidget {
           accentColor: const Color(0xFF13B9FF),
         ),
       ),
-      localizationsDelegates: AppLocalizations.localizationsDelegates,
-      supportedLocales: AppLocalizations.supportedLocales,
+      localizationsDelegates: AppBankLocalizations.localizationsDelegates,
+      supportedLocales: AppBankLocalizations.supportedLocales,
       home: const HomePage(),
     );
   }
