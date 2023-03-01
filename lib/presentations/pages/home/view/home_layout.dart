@@ -1,3 +1,4 @@
+import 'package:bank_template/presentations/pages/home/widgets/action_sheet.dart';
 import 'package:bank_template/presentations/pages/home/widgets/credit_card_carousel.dart';
 import 'package:bank_template/presentations/pages/home/widgets/finance_carousel.dart';
 import 'package:bank_template/presentations/pages/home/widgets/home_app_bar.dart';
@@ -38,34 +39,56 @@ class _HomeLayoutState extends State<HomeLayout> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const HomeAppBar(),
-              const SizedBox(height: AppSize.size32,),
-              const UserBalance(),
-              const SizedBox(height: AppSize.size28,),
-              CreditCardCarousel(),
-              const SizedBox(height: AppSize.size40,),
-              FinanceCarousel(),
-              const Spacer(),
-              BottomNavigationBar(
-                showSelectedLabels: false,
-                showUnselectedLabels: false,
-                unselectedItemColor: Colors.white,
-                backgroundColor: Colors.black,
-                selectedItemColor: AppColors.accentYellow,
-                type: BottomNavigationBarType.fixed,
-                items: AppBottomBarItem.generate([
-                  Assets.icons.iconHome2pxLine.path,
-                  Assets.icons.iconBag2pxLine.path,
-                  Assets.icons.iconCard2pxLine.path,
-                  Assets.icons.iconChat2pxLine.path,
-                  Assets.icons.iconTime2pxLine.path
-                ]),
-                currentIndex: _navIndex,
-                onTap: (index) {
-                  setState(() {
-                    _navIndex = index;
-                  });
-                },
-              ).cornerRadius(AppRadius.rad16),
+              SingleChildScrollView(
+                physics: const BouncingScrollPhysics(),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const SizedBox(
+                      height: AppSize.size32,
+                    ),
+                    const UserBalance(),
+                    const SizedBox(
+                      height: AppSize.size28,
+                    ),
+                    CreditCardCarousel(),
+                    const SizedBox(
+                      height: AppSize.size40,
+                    ),
+                    FinanceCarousel(),
+                    const SizedBox(
+                      height: AppSize.size36,
+                    ),
+                    const ActionSheet(),
+                  ],
+                ),
+              ).expand(),
+              ClipRRect(
+                borderRadius: const BorderRadius.vertical(
+                    top: Radius.circular(AppRadius.rad16)),
+                clipBehavior: Clip.hardEdge,
+                child: BottomNavigationBar(
+                  showSelectedLabels: false,
+                  showUnselectedLabels: false,
+                  unselectedItemColor: Colors.white,
+                  backgroundColor: Colors.black,
+                  selectedItemColor: AppColors.accentYellow,
+                  type: BottomNavigationBarType.fixed,
+                  items: AppBottomBarItem.generate([
+                    Assets.icons.iconHome2pxLine.path,
+                    Assets.icons.iconBag2pxLine.path,
+                    Assets.icons.iconCard2pxLine.path,
+                    Assets.icons.iconChat2pxLine.path,
+                    Assets.icons.iconTime2pxLine.path
+                  ]),
+                  currentIndex: _navIndex,
+                  onTap: (index) {
+                    setState(() {
+                      _navIndex = index;
+                    });
+                  },
+                ),
+              ),
             ],
           ),
         ),

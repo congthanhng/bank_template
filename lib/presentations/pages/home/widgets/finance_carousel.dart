@@ -32,7 +32,7 @@ class FinanceCarousel extends StatelessWidget {
                 const SizedBox(width: AppPadding.pad13,),
             itemCount: mockFinance.length,
             itemBuilder: (context, index) => const SmallCard() ,
-            shrinkWrap: true,
+            physics: const BouncingScrollPhysics(),
             scrollDirection: Axis.horizontal,
           ),
         )

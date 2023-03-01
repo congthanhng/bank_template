@@ -27,4 +27,6 @@ class AppColors {
 
   static const text = Color (0xFF272A32);
   static const smallCardBg = Color (0xFF252626);
+
+  static const actionPlus = Color (0xFFE5E5E5);
 }

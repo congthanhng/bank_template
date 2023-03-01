@@ -12,6 +12,7 @@ dependencies:
     sdk: flutter
   flutter_bloc: ^8.1.2
   velocity_x: ^3.6.0
+  expansion_tile_group: ^1.2.1
 
   ##Local Dependencies
   bank_ui_kit:

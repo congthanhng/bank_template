@@ -17,6 +17,10 @@ class $AssetsIconsGen {
   /// File path: assets/icons/chart.png
   AssetGenImage get chart => const AssetGenImage('assets/icons/chart.png');
 
+  /// File path: assets/icons/creditcard_face.png
+  AssetGenImage get creditcardFace =>
+      const AssetGenImage('assets/icons/creditcard_face.png');
+
   /// File path: assets/icons/icon_bag_2px_line.png
   AssetGenImage get iconBag2pxLine =>
       const AssetGenImage('assets/icons/icon_bag_2px_line.png');
@@ -46,6 +50,7 @@ class $AssetsIconsGen {
   /// List of all assets
   List<AssetGenImage> get values => [
         chart,
+        creditcardFace,
         iconBag2pxLine,
         iconCard2pxLine,
         iconChat2pxLine,

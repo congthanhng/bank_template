@@ -17,17 +17,7 @@ class SmallCard extends StatelessWidget {
         children: [
           Padding(
             padding: const EdgeInsets.all(AppPadding.pad16),
-            child: Container(
-              width: AppSize.size32,
-              height: AppSize.size32,
-              decoration: BoxDecoration(
-                  color: AppColors.accentYellow,
-                  borderRadius: BorderRadius.circular(AppRadius.rad10)),
-              child: Padding(
-                padding: const EdgeInsets.all(AppPadding.pad4),
-                child: Assets.icons.star.imageWidget(),
-              ),
-            ),
+            child: AppBadge(iconImage: Assets.icons.star.imageWidget(),)
           ),
           const Spacer(),
           Padding(

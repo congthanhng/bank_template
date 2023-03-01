@@ -7,7 +7,7 @@ class CreditCardMedium extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: MediaQuery.of(context).size.width / 3,
+      width: MediaQuery.of(context).size.width / 2.5,
       decoration: BoxDecoration(
           gradient: const LinearGradient(
               colors: [

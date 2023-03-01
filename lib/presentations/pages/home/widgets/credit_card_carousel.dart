@@ -17,7 +17,7 @@ class CreditCardCarousel extends StatelessWidget {
         ),
         itemBuilder: (context, index) => const CreditCardMedium(),
         scrollDirection: Axis.horizontal,
-        shrinkWrap: true,
+        physics: const BouncingScrollPhysics(),
         itemCount: list.length,
       ),
     ).px(AppPadding.pad16);
