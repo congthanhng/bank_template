@@ -3,5 +3,9 @@
     "counterAppBarTitle": "Counter",
     "@counterAppBarTitle": {
         "description": "Text shown in the AppBar of the Counter Page"
-    }
+    },
+    "current_loans": "Current loans",
+    "currencies_and_metals": "Currencies and metals",
+    "finance": "Finance",
+    "your_balance": "Your balance"
 }

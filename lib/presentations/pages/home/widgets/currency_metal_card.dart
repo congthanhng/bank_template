@@ -3,8 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 class CurrencyMetalCard extends StatelessWidget {
-  const CurrencyMetalCard({super.key});
+  const CurrencyMetalCard({super.key, this.isMetal = false});
 
+  final bool isMetal; // this is mock data
   @override
   Widget build(BuildContext context) {
     return DecoratedBox(
@@ -22,7 +23,7 @@ class CurrencyMetalCard extends StatelessWidget {
           TableRow(
             children: [
               Text(
-                'Currencie',
+                isMetal ? 'Metals' : 'Currencie',
                 style: Theme.of(context).textTheme.bodySmall?.copyWith(
                     color: Colors.grey, fontSize: AppFontSize.fontSize12),
               ).pOnly(bottom: AppPadding.pad12),
@@ -43,7 +44,9 @@ class CurrencyMetalCard extends StatelessWidget {
               Row(
                 children: [
                   AppBadge(
-                    iconImage: Assets.icons.dollar.imageWidget(),
+                    iconImage: isMetal
+                        ? Assets.icons.metal.imageWidget()
+                        : Assets.icons.dollar.imageWidget(),
                     background: AppColors.accentMint,
                     size: AppSize.size20,
                     radius: AppRadius.rad8,
@@ -77,7 +80,9 @@ class CurrencyMetalCard extends StatelessWidget {
                 child: Row(
                   children: [
                     AppBadge(
-                      iconImage: Assets.icons.euro.imageWidget(),
+                      iconImage: isMetal
+                          ? Assets.icons.metal.imageWidget()
+                          : Assets.icons.euro.imageWidget(),
                       background: AppColors.accentMint,
                       size: AppSize.size20,
                       radius: AppRadius.rad8,

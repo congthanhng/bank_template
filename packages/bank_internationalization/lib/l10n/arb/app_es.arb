@@ -3,5 +3,9 @@
     "counterAppBarTitle": "Contador",
     "@counterAppBarTitle": {
         "description": "Texto mostrado en la AppBar de la página del contador"
-    }
+    },
+    "current_loans": "Current loans",
+    "currencies_and_metals": "Currencies and metals",
+    "finance": "Finance",
+    "your_balance": "Your balance"
 }

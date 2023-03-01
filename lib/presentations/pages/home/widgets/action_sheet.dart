@@ -28,7 +28,7 @@ class ActionSheet extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: const [
           AppExpansion(
-            title: 'Current loans',
+            title: 'Current Loans',
             isTrailing: true,
             children: [
               CardLoan(),
@@ -45,7 +45,7 @@ class ActionSheet extends StatelessWidget {
               SizedBox(
                 height: AppPadding.pad12,
               ),
-              CurrencyMetalCard(),
+              CurrencyMetalCard(isMetal: true),
             ],
           ),
           SizedBox(
