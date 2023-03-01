@@ -18,7 +18,6 @@ class ActionSheet extends StatelessWidget {
           colors: [
             AppColors.homeBGGradient,
             AppColors.primaryBg,
-            AppColors.primaryBg,
             AppColors.homeBGGradient
           ],
           begin: Alignment.topRight,
