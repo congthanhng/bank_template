@@ -65,7 +65,8 @@ class _HomeLayoutState extends State<HomeLayout> {
               ).expand(),
               ClipRRect(
                 borderRadius: const BorderRadius.vertical(
-                    top: Radius.circular(AppRadius.rad16)),
+                  top: Radius.circular(AppRadius.rad16),
+                ),
                 clipBehavior: Clip.hardEdge,
                 child: BottomNavigationBar(
                   showSelectedLabels: false,

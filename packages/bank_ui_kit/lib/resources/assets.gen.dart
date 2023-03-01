@@ -24,6 +24,12 @@ class $AssetsIconsGen {
   AssetGenImage get creditcardFace =>
       const AssetGenImage('assets/icons/creditcard_face.png');
 
+  /// File path: assets/icons/dollar.png
+  AssetGenImage get dollar => const AssetGenImage('assets/icons/dollar.png');
+
+  /// File path: assets/icons/euro.png
+  AssetGenImage get euro => const AssetGenImage('assets/icons/euro.png');
+
   /// File path: assets/icons/icon_bag_2px_line.png
   AssetGenImage get iconBag2pxLine =>
       const AssetGenImage('assets/icons/icon_bag_2px_line.png');
@@ -44,6 +50,9 @@ class $AssetsIconsGen {
   AssetGenImage get iconTime2pxLine =>
       const AssetGenImage('assets/icons/icon_time_2px_line.png');
 
+  /// File path: assets/icons/metal.png
+  AssetGenImage get metal => const AssetGenImage('assets/icons/metal.png');
+
   /// File path: assets/icons/star.png
   AssetGenImage get star => const AssetGenImage('assets/icons/star.png');
 
@@ -58,11 +67,14 @@ class $AssetsIconsGen {
         chart,
         close,
         creditcardFace,
+        dollar,
+        euro,
         iconBag2pxLine,
         iconCard2pxLine,
         iconChat2pxLine,
         iconHome2pxLine,
         iconTime2pxLine,
+        metal,
         star,
         thunder,
         wallet

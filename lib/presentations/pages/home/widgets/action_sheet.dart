@@ -1,5 +1,6 @@
 import 'package:bank_template/presentations/pages/home/widgets/card_advertisement.dart';
 import 'package:bank_template/presentations/pages/home/widgets/card_loan.dart';
+import 'package:bank_template/presentations/pages/home/widgets/currency_metal_card.dart';
 import 'package:bank_ui_kit/components/expansions/app_expansion.dart';
 import 'package:bank_ui_kit/shelf.dart';
 import 'package:flutter/material.dart';
@@ -10,21 +11,20 @@ class ActionSheet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DecoratedBox(
-      decoration:  BoxDecoration(
-          borderRadius:
-              BorderRadius.circular(AppRadius.rad16),
-          // color: AppColors.homeBGGradient
-          gradient: const LinearGradient(
-            colors: [
-              AppColors.homeBGGradient,
-              AppColors.primaryBg,
-              AppColors.primaryBg,
-              AppColors.homeBGGradient
-            ],
-            begin: Alignment.topRight,
-            end: Alignment.bottomLeft,
-          )
-          ),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(AppRadius.rad16),
+        // color: AppColors.homeBGGradient
+        gradient: const LinearGradient(
+          colors: [
+            AppColors.homeBGGradient,
+            AppColors.primaryBg,
+            AppColors.primaryBg,
+            AppColors.homeBGGradient
+          ],
+          begin: Alignment.topRight,
+          end: Alignment.bottomLeft,
+        ),
+      ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: const [
@@ -33,25 +33,25 @@ class ActionSheet extends StatelessWidget {
             isTrailing: true,
             children: [
               CardLoan(),
-              SizedBox(height: AppPadding.pad16,),
+              SizedBox(
+                height: AppPadding.pad16,
+              ),
               CardAdvertisement(),
-              Text('afaffa'),
-              Text('afaffa'),
-              Text('afaffa'),
-              Text('afaffa'),
             ],
           ),
           AppExpansion(
             title: 'Currencies and metals',
             children: [
-              Text('afaffa'),
-              Text('afaffa'),
-              Text('afaffa'),
-              Text('afaffa'),
-              Text('afaffa'),
-              Text('afaffa'),
+              CurrencyMetalCard(),
+              SizedBox(
+                height: AppPadding.pad12,
+              ),
+              CurrencyMetalCard(),
             ],
-          )
+          ),
+          SizedBox(
+            height: AppPadding.pad12,
+          ),
         ],
       ),
     );

@@ -15,23 +15,22 @@ class FinanceCarousel extends StatelessWidget {
       children: [
         Text(
           'Finance'.toUpperCase(),
-          style: Theme
-              .of(context)
-              .textTheme
-              .bodySmall
-              ?.copyWith(
-            color: Colors.white,
-            fontSize: AppFontSize.fontSize10,
-          ),
+          style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                color: Colors.white,
+                fontSize: AppFontSize.fontSize10,
+              ),
         ),
-        const SizedBox(height: AppPadding.pad12,),
+        const SizedBox(
+          height: AppPadding.pad12,
+        ),
         SizedBox(
           height: MediaQuery.of(context).size.width / 3.7,
           child: ListView.separated(
-            separatorBuilder: (context, index) =>
-                const SizedBox(width: AppPadding.pad13,),
+            separatorBuilder: (context, index) => const SizedBox(
+              width: AppPadding.pad13,
+            ),
             itemCount: mockFinance.length,
-            itemBuilder: (context, index) => const SmallCard() ,
+            itemBuilder: (context, index) => const SmallCard(),
             physics: const BouncingScrollPhysics(),
             scrollDirection: Axis.horizontal,
           ),

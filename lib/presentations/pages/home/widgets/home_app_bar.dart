@@ -14,7 +14,9 @@ class HomeAppBar extends StatelessWidget {
         children: [
           Assets.images.userAvatar
               .svgWidget(
-                  fit: BoxFit.fill, width: AppSize.size32, height: AppSize.size32)
+                  fit: BoxFit.fill,
+                  width: AppSize.size32,
+                  height: AppSize.size32)
               .pOnly(left: AppPadding.pad16),
           Assets.images.logo.imageWidget(height: AppSize.size21).centered(),
         ],

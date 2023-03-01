@@ -1,6 +1,7 @@
 class AppPadding{
   static const pad2 = 2.0;
   static const pad4 = 4.0;
+  static const pad8 = 8.0;
   static const pad10 = 10.0;
   static const pad12 = 12.0;
   static const pad13 = 13.0;
