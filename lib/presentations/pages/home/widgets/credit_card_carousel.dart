@@ -10,7 +10,7 @@ class CreditCardCarousel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: AppSize.size170,
+      height: MediaQuery.of(context).size.height / 4,
       child: ListView.separated(
         separatorBuilder: (context, index) => const SizedBox(
           width: AppPadding.pad13,

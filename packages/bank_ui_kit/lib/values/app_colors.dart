@@ -26,4 +26,5 @@ class AppColors {
   static const homeBGGradient = Color (0xFF433D48);
 
   static const text = Color (0xFF272A32);
+  static const smallCardBg = Color (0xFF252626);
 }

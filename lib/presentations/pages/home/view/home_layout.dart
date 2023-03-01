@@ -1,4 +1,5 @@
 import 'package:bank_template/presentations/pages/home/widgets/credit_card_carousel.dart';
+import 'package:bank_template/presentations/pages/home/widgets/finance_carousel.dart';
 import 'package:bank_template/presentations/pages/home/widgets/home_app_bar.dart';
 import 'package:bank_template/presentations/pages/home/widgets/user_balance.dart';
 import 'package:bank_ui_kit/shelf.dart';
@@ -41,6 +42,8 @@ class _HomeLayoutState extends State<HomeLayout> {
               const UserBalance(),
               const SizedBox(height: AppSize.size28,),
               CreditCardCarousel(),
+              const SizedBox(height: AppSize.size40,),
+              FinanceCarousel(),
               const Spacer(),
               BottomNavigationBar(
                 showSelectedLabels: false,

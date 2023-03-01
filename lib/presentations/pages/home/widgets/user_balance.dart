@@ -22,9 +22,10 @@ class UserBalance extends StatelessWidget {
             Text(
               r'$ 7,896',
               style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 25,),
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 25,
+                  ),
             ),
             const Spacer(),
             DecoratedBox(

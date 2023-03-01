@@ -14,6 +14,9 @@ import 'package:flutter/services.dart';
 class $AssetsIconsGen {
   const $AssetsIconsGen();
 
+  /// File path: assets/icons/chart.png
+  AssetGenImage get chart => const AssetGenImage('assets/icons/chart.png');
+
   /// File path: assets/icons/icon_bag_2px_line.png
   AssetGenImage get iconBag2pxLine =>
       const AssetGenImage('assets/icons/icon_bag_2px_line.png');
@@ -34,13 +37,22 @@ class $AssetsIconsGen {
   AssetGenImage get iconTime2pxLine =>
       const AssetGenImage('assets/icons/icon_time_2px_line.png');
 
+  /// File path: assets/icons/star.png
+  AssetGenImage get star => const AssetGenImage('assets/icons/star.png');
+
+  /// File path: assets/icons/wallet.png
+  AssetGenImage get wallet => const AssetGenImage('assets/icons/wallet.png');
+
   /// List of all assets
   List<AssetGenImage> get values => [
+        chart,
         iconBag2pxLine,
         iconCard2pxLine,
         iconChat2pxLine,
         iconHome2pxLine,
-        iconTime2pxLine
+        iconTime2pxLine,
+        star,
+        wallet
       ];
 }
 

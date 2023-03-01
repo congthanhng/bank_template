@@ -9,3 +9,4 @@ export 'package:bank_ui_kit/values/app_font_size.dart';
 
 export 'package:bank_ui_kit/components/bottom_bars/app_bottom_bar_item.dart';
 export 'package:bank_ui_kit/components/cards/credit_card_medium.dart';
+export 'package:bank_ui_kit/components/cards/small_card.dart';
